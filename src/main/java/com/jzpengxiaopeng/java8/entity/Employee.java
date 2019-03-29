@@ -35,6 +35,17 @@ public class Employee {
 		super();
 	}
 
+	public Employee(String name) {
+		super();
+		this.name = name;
+	}
+
+	public Employee(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
 	public Employee(String name, int age, double salary) {
 		super();
 		this.name = name;
@@ -47,4 +58,7 @@ public class Employee {
 		return "Employee [name=" + name + ", age=" + age + ", salary=" + salary + "]";
 	}
 
+	public String show() {
+		return toString();
+	}
 }
